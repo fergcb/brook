@@ -1,0 +1,14 @@
+{
+  "name": "brook",
+  "version": "0.1.0",
+  "license": "MIT",
+  "type": "module",
+  "main": "./src/index.js",
+  "bin": {
+    "brook": "./bin/brook.js"
+  },
+  "dependencies": {
+    "commander": "^11.1.0",
+    "lodash.isequal": "^4.5.0"
+  }
+}

@@ -1,0 +1,9 @@
+"aoc/input/01.txt" readFile lines
+map (
+  chars
+  filter (isDigit)
+  pick [0 -1]
+  join ""
+  toInt
+)
+sum
