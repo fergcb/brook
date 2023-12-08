@@ -6,4 +6,4 @@ map (
   join ""
   toInt
 )
-sum
+sum;
