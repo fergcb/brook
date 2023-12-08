@@ -1,0 +1,19 @@
+"aoc/input/01.txt" readFile lines
+map (
+  (length range) map S (
+    slice
+    matchStart (["1" "2" "3" "4" "5" "6" "7" "8" "9" "one" "two" "three" "four" "five" "six" "seven" "eight" "nine"] join "|")
+    indexIn ["1" "2" "3" "4" "5" "6" "7" "8" "9" "one" "two" "three" "four" "five" "six" "seven" "eight" "nine"]
+  )
+  filter (_ gtEq 0)
+  map (
+    _
+    mod 9
+    plus 1
+    toString
+  )
+  pick [0 -1]
+  join ""
+  toInt
+)
+sum
